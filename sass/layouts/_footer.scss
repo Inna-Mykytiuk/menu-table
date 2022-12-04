@@ -15,7 +15,7 @@
    }
 }
 
-.footer-list {
+.footer__list {
    display: flex;
    flex-direction: column;
    margin-bottom: 32px;
@@ -50,7 +50,7 @@
    }
 }
 
-.footer__soc {
+.footer-soc__link {
    display: flex;
    align-items: center;
    color: #F3C653;  
@@ -59,7 +59,7 @@
    &:hover,
    &:focus {
       background-color: transparent;
-      color: white;      
+      color: white;    
    }
 
    @include tablet {
@@ -70,10 +70,10 @@
    }
 }
 
-.footer__soc:hover,
-.footer__soc:focus {
+.footer-soc__link:hover,
+.footer-soc__link:focus {
    @include mobile {
-      border: none;
+   border: none;
    }
    @include tablet {
    border: 0.5px solid white;
@@ -82,13 +82,14 @@
 
 
 
-.footer__soc:hover .soc__name,
-.footer__soc:focus .soc__name {
+.footer-soc__link:hover .footer-soc__name,
+.footer-soc__link:focus .footer-soc__name {
    color: white;
+   
 }
 
 
-.footer-link {
+.footer__link {
    font-family: 'Montserrat';
    font-style: normal;
    font-weight: 500;
@@ -112,7 +113,7 @@
    
 }
 
-.soc__name {
+.footer-soc__name {
    font-style: normal;
    font-weight: 400;
    font-size: 16px;
@@ -130,19 +131,19 @@
       }
 }
 
-.footer-item {
+.footer__item {
    margin-bottom: 16px;
    // @include tablet {
    //    margin-bottom: 12px;
    // }
 }
-.footer-item:last-child {
+.footer__item:last-child {
    margin-bottom: 0;
 
 }
 
 
-.footer-social__wrap {
+.footer-soc__wrap {
    display: flex;
    gap: 20px;
    @include tablet {
@@ -154,10 +155,13 @@
 
 .footer-soc__item {
    text-align: center;
+   
 }
 
 
-.footer-wrap {
+
+
+.footer__wrap {
    @include tablet {
       display: flex;
    }
