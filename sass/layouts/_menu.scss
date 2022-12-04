@@ -26,6 +26,7 @@ td {
 table {
    border-collapse: collapse;
    border-spacing: 0;
+   width: 100%;
 }
 
 .menu {
@@ -96,14 +97,14 @@ th {
    color: $menu-text;
 
    @include desktop {
-      font-size: 16px;
-      line-height: 1.25;
+   font-size: 16px;
+   line-height: 1.25;
    }
 }
 
 .menu__name.long {
    @include desktop {
-      width: 291px;
+   width: 291px;
    }
 }
 
@@ -117,8 +118,8 @@ th {
    color: $menu-text;
 
    @include desktop {
-      // max-width: 257px;
-      width: 100%;
+   // max-width: 257px;
+   width: 100%;
    }
 }
 
@@ -139,7 +140,7 @@ th {
    width: 225px;
 
    @include desktop {
-      min-width: 262px;
+   min-width: 262px;
    }
 }
 
@@ -167,19 +168,18 @@ th {
    vertical-align: middle;
 
    @include tablet {
-      margin: 0 0 0 47px;
+   margin: 0 0 0 47px;
    }
 
    @include desktop {
-      margin: 0 0 0 60px;
-      font-size: 16px;
-      line-height: 1.25;
+   margin: 0 0 0 60px;
+   font-size: 16px;
+   line-height: 1.25;
    }
 }
 
 .menu__name-wrap {
    max-width: 221px;
-   // margin-right: 30px;
 
    @media screen and (max-width: 413px) {
       margin-right: auto;
@@ -187,7 +187,6 @@ th {
 
    @include tablet {
       max-width: 226px;
-      // margin-right: 45px;
    }
 
    @include desktop {
@@ -214,7 +213,7 @@ th {
    margin: 0 0 8px 0;
 
    @include desktop {
-      margin-bottom: 12px;
+   margin-bottom: 12px;
    }
 }
 
@@ -228,12 +227,9 @@ th {
 
 .menu__item {
    display: flex;
-   // flex-direction: column;
    justify-content: space-between;
    align-items: center;
-
    margin-bottom: 8px;
-
    margin: 0;
    // min-width: 384px;
    margin: 0 0 8px 0;
@@ -277,12 +273,12 @@ th {
 
    &:hover,
    &:focus {
-      background: #ffffff;
-      border: 2px solid #f3c653;
+   background: #ffffff;
+   border: 2px solid #f3c653;
    }
 
    @include tablet {
-      margin-right: 0;
+   margin-right: 0;
    }
 }
 
@@ -290,29 +286,25 @@ th {
    margin-top: 32px;
 
    @include tablet {
-      display: flex;
-      // justify-content: center;
-      justify-content: space-between;
-      margin-top: 40px;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 40px;
    }
 }
 
-@include tablet {
-   .menu__list-wrap.second {
+.menu__list-wrap.second {
+   @include tablet {
       width: 430px;
    }
-}
-
-@include desktop {
-   .menu__list-wrap.second {
+   @include desktop {
       width: 485px;
    }
 }
 
 .menu__list-wrap.first {
    @include tablet {
-      width: 411px;
-      margin-right: 88px;
+   width: 411px;
+   margin-right: 88px;
    }
 
    @include desktop {
@@ -321,24 +313,19 @@ th {
    }
 }
 
-// .menu__list {
-//    border: 1px solid black;
+// tr {
+//    vertical-align: middle;
 // }
 
-tr {
-   vertical-align: middle;
-}
-
-.menu__amount,
-.menu__price {
-   text-align: end;
-}
-
-table {
-   width: 100%;
-}
+// .menu__amount,
+// .menu__price {
+//    text-align: end;
+// }
 
 // th,
 // td {
 //    padding: 0;
+// }
+// .menu__list {
+//    border: 1px solid black;
 // }

@@ -345,6 +345,7 @@ td {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  width: 100%;
 }
 
 .menu {
@@ -637,6 +638,7 @@ th {
     width: 485px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .menu__list-wrap.first {
     width: 411px;
@@ -648,19 +650,6 @@ th {
     width: 485px;
     margin-right: 140px;
   }
-}
-
-tr {
-  vertical-align: middle;
-}
-
-.menu__amount,
-.menu__price {
-  text-align: end;
-}
-
-table {
-  width: 100%;
 }
 
 .benefits {
