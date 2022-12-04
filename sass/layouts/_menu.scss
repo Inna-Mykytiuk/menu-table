@@ -168,7 +168,7 @@ th {
    }
 }
 
-.name__wrap {
+.menu__name-wrap {
    max-width: 221px;
    // margin-right: 30px;
 
@@ -187,8 +187,8 @@ th {
    }
 }
 
-.deserts__name,
-.drinks__name {
+.menu__deserts-name,
+.menu__drinks-name {
    font-weight: 500;
    font-size: 16px;
    line-height: 1.25;
@@ -213,7 +213,7 @@ th {
    margin-bottom: 0;
 }
 
-.deserts__list .menu__item.deserts:last-child {
+.menu__deserts-list .menu__item.deserts:last-child {
    margin-bottom: 0;
 }
 
@@ -234,8 +234,8 @@ th {
    }
 }
 
-.deserts__name.last,
-.drinks__name.last {
+.menu__deserts-name.last,
+.menu__drinks-name.last {
    margin: 0;
 }
 
@@ -289,18 +289,18 @@ th {
 }
 
 @include tablet {
-   .list__wrap.second {
+   .menu__list-wrap.second {
       width: 430px;
    }
 }
 
 @include desktop {
-   .list__wrap.second {
+   .menu__list-wrap.second {
       width: 485px;
    }
 }
 
-.list__wrap.first {
+.menu__list-wrap.first {
    @include tablet {
       width: 411px;
       margin-right: 88px;
