@@ -650,10 +650,6 @@ th {
   }
 }
 
-.menu__list {
-  border: 1px solid black;
-}
-
 tr {
   vertical-align: middle;
 }
@@ -665,11 +661,6 @@ tr {
 
 table {
   width: 100%;
-}
-
-th,
-td {
-  padding: 0;
 }
 
 .benefits {
