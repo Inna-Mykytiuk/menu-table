@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Film P3';
+    src: local('Film P3 Regular'), local('Film-P3-Regular'),
+        url('FilmP3.woff2') format('woff2'),
+        url('FilmP3.woff') format('woff'),
+        url('FilmP3.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
