@@ -1,3 +1,12 @@
+$menu-section-color: #fffdee;
+$menu-title: #212121;
+$menu-subtitle: #212121;
+$menu-text: #212121;
+$menu-border-color: #fffdee;;
+$acent-color: #f3c653;
+$main-white-color: #ffffff;
+
+
 table,
 tbody,
 caption,
@@ -20,7 +29,7 @@ table {
 }
 
 .menu {
-   background-color: #fffdee;
+   background-color: $menu-section-color;
    padding: 32px 0;
 
    @include tablet {
@@ -38,7 +47,7 @@ table {
    font-size: 32px;
    line-height: 1.15;
 
-   color: #000000;
+   color: $menu-subtitle;
 }
 
 .menu__subtitle {
@@ -49,7 +58,7 @@ table {
    margin: 16px 0;
    text-align: left;
 
-   color: #000000;
+   color: $menu-subtitle;
 
    @include tablet {
       margin: 20px 0;
@@ -84,7 +93,7 @@ th {
    letter-spacing: 0.02em;
    margin: 0 0 4px 0;
 
-   color: #000000;
+   color: $menu-text;
 
    @include desktop {
       font-size: 16px;
@@ -105,7 +114,7 @@ th {
    line-height: 1.2;
    letter-spacing: 0.02em;
 
-   color: #000000;
+   color: $menu-text;
 
    @include desktop {
       // max-width: 257px;
@@ -140,7 +149,7 @@ th {
    line-height: 1.2;
 
    letter-spacing: 0.02em;
-   color: #000000;
+   color: $menu-text;
    margin: 0;
    vertical-align: middle;
 }
@@ -150,7 +159,7 @@ th {
    line-height: 1.2;
 
    letter-spacing: 0.02em;
-   color: #000000;
+   color: $menu-text;
    font-weight: 700;
    margin: 0 0 0 32px;
 
@@ -195,7 +204,7 @@ th {
    letter-spacing: 0.02em;
    margin-left: 0;
 
-   color: #000000;
+   color: $menu-text;
 }
 
 .menu__item.deserts,
@@ -256,10 +265,10 @@ th {
    min-width: 236px;
    height: 50px;
 
-   background-color: #000000;
+   background-color: $menu-text;
 
    border-radius: 25px;
-   border: 2px solid #fffdee;
+   border: 2px solid menu-border-color;
    cursor: pointer;
 
    color: #f3c653;

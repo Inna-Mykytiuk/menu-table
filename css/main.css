@@ -367,7 +367,7 @@ table {
   font-weight: 700;
   font-size: 32px;
   line-height: 1.15;
-  color: #000000;
+  color: #212121;
 }
 
 .menu__subtitle {
@@ -377,7 +377,7 @@ table {
   line-height: 1.15;
   margin: 16px 0;
   text-align: left;
-  color: #000000;
+  color: #212121;
 }
 @media screen and (min-width: 1024px) {
   .menu__subtitle {
@@ -415,7 +415,7 @@ th {
   line-height: 1.21;
   letter-spacing: 0.02em;
   margin: 0 0 4px 0;
-  color: #000000;
+  color: #212121;
 }
 @media screen and (min-width: 1280px) {
   .menu__name,
@@ -436,7 +436,7 @@ th {
   font-size: 10px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #000000;
+  color: #212121;
 }
 @media screen and (min-width: 1280px) {
   .menu__text {
@@ -472,7 +472,7 @@ th {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #000000;
+  color: #212121;
   margin: 0;
   vertical-align: middle;
 }
@@ -481,7 +481,7 @@ th {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #000000;
+  color: #212121;
   font-weight: 700;
   margin: 0 0 0 32px;
   margin-right: 0;
@@ -527,7 +527,7 @@ th {
   line-height: 1.25;
   letter-spacing: 0.02em;
   margin-left: 0;
-  color: #000000;
+  color: #212121;
 }
 
 .menu__item.deserts,
@@ -594,9 +594,9 @@ th {
   text-transform: uppercase;
   min-width: 236px;
   height: 50px;
-  background-color: #000000;
+  background-color: #212121;
   border-radius: 25px;
-  border: 2px solid #fffdee;
+  border: 2px solid menu-border-color;
   cursor: pointer;
   color: #f3c653;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
