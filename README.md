@@ -1,2 +1,2 @@
-# Aloha
+# MIMI
 Simply one page landing
