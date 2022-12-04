@@ -59,17 +59,28 @@
    &:hover,
    &:focus {
       background-color: transparent;
-      color: white;
-      border: 0.5px solid white;
+      color: white;      
    }
 
    @include tablet {
       min-width: 144px;
-      border: 0.5px solid #F3C653;
       border-radius: 2px;
       padding: 10px 12px;
+      border: 0.5px solid #F3C653;
    }
 }
+
+.footer__soc:hover,
+.footer__soc:focus {
+   @include mobile {
+      border: none;
+   }
+   @include tablet {
+   border: 0.5px solid white;
+   }
+}
+
+
 
 .footer__soc:hover .soc__name,
 .footer__soc:focus .soc__name {
@@ -98,6 +109,7 @@
 .footer__icon {
    display: block;
    fill: currentColor;
+   
 }
 
 .soc__name {

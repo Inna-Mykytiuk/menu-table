@@ -1022,14 +1022,26 @@ table {
 .footer__soc:hover, .footer__soc:focus {
   background-color: transparent;
   color: white;
-  border: 0.5px solid white;
 }
 @media screen and (min-width: 1024px) {
   .footer__soc {
     min-width: 144px;
-    border: 0.5px solid #F3C653;
     border-radius: 2px;
     padding: 10px 12px;
+    border: 0.5px solid #F3C653;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .footer__soc:hover,
+.footer__soc:focus {
+    border: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__soc:hover,
+.footer__soc:focus {
+    border: 0.5px solid white;
   }
 }
 
