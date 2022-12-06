@@ -459,9 +459,6 @@ th {
   }
 }
 
-.menu__text.long {
-  width: 225px;
-}
 @media screen and (min-width: 1280px) {
   .menu__text.long {
     min-width: 262px;
@@ -597,7 +594,7 @@ th {
   height: 50px;
   background-color: #212121;
   border-radius: 25px;
-  border: 2px solid menu-border-color;
+  border: 2px solid #fffdee;
   cursor: pointer;
   color: #f3c653;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
