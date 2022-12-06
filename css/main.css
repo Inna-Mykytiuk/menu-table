@@ -924,11 +924,11 @@ th {
 
 .footer {
   background-color: #0E0C07;
-  padding: 40px;
+  padding: 40px 0;
 }
 @media screen and (min-width: 1024px) {
   .footer {
-    padding: 80px;
+    padding: 80px 0;
   }
 }
 
@@ -1099,6 +1099,7 @@ th {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 137px;
+    gap: 12px;
   }
 }
 

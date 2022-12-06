@@ -1,8 +1,8 @@
 .footer {
    background-color: #0E0C07;
-   padding: 40px;
+   padding: 40px 0;
    @include tablet {
-      padding: 80px;
+      padding: 80px 0;
    }
 }
 
@@ -10,6 +10,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+   // justify-content: center;
    @include tablet {
       justify-content: center;
    }
