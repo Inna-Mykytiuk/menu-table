@@ -64,22 +64,22 @@
       </div>   
    </div> -->
    
-   <!-- <header class="header gradient">
+   <header class="header gradient">
       <div class="container">
          <nav class="nav">
             <a href="#" class="nav__logo">Mimino</a>
             <div class="nav__wrap">
 
-               <a href="#" class="rest__link">Ресторан</a>
+               <a href="#" class="nav__link">Ресторан</a>
                <a href="#" class="nav__contacts rest" aria-label="іконка">
-                  <svg class="icon__rest" width="24" height="24">
+                  <svg class="nav__icon-rest" width="24" height="24">
                   <use href="./images/social-defs.svg#icon-phone"></use>
                   </svg>
                   <p class="nav__tel">095 555 95 33</p>
                </a>
                <a href="#" class="nav__link hotel">Готель</a>
                <a href="#" class="nav__contacts hotel" aria-label="іконка">
-                  <svg class="icon__hotel" width="24" height="24">
+                  <svg class="nav__icon-hotel" width="24" height="24">
                   <use href="./images/social-defs.svg#icon-phone"></use>
                   </svg>
                   <p class="nav__tel">095 555 95 33</p>
@@ -94,9 +94,42 @@
                      class="address__link--location">Україна, м. Полтава, <br> вул. Маршала Бірюзова, 15</a>
                </address>
       </div>
-   </header> -->
+   </header>
    
    <main>
+   <section class="slider__section">
+      <div class="container">
+         <div class="slider">
+            <div class="slider__item">
+               <img class="slider-img" src="./images/slider-mini/slider-mob/img-1-mob.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+               <img class="slider-img" src="./images/slider-mini/slider-mob/img-2-mob.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+               <img class="slider-img" src="./images/slider-mini/slider-mob/img-3-mob.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+               <img class="slider-img" src="./images/slider-mini/slider-mob/img-4-mob.jpeg" alt="">
+            </div>
+            <div class="slider__item">
+               <img class="slider-img" src="./images/slider-mini/slider-mob/img-5-mob.jpeg" alt="">
+            </div>
+            <!-- <div class="swiper-button-prev-mini">
+               <svg width="32" height="32">
+               <use href="./images/icons/arrows.svg#icon-arrow-left"></use>
+               </svg>
+            </div>
+            <div class="swiper-button-next-mini s">
+               <svg width="32" height="32">
+               <use href="./images/icons/arrows.svg#icon-arrow-right"></use>
+               </svg>
+            </div>   -->
+         </div>
+
+      </div>
+   </section>   
+
    <section class="menu">
       <div class="container">
          <h2 class="menu__title">Меню ресторану</h2>
@@ -314,6 +347,9 @@
       </div>
    </footer>
 
-   <!-- <p class="footer-text">© Aloha</p> -->
+   <!-- Slider -->
+   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+   <script src="./js/slick.min.js"></script>
+   <script src="./js/script.js"></script>
 </body>
 </html>

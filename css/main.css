@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-text-color: #757575;
   --title-text-color: #303030;
@@ -122,6 +123,121 @@ body {
   width: 100%;
 }
 
+.slider__section {
+  padding: 30px 0;
+  background-color: #fffdee;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* Точки (булиты) */
+.slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+/* Активная точка */
+.slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid #f3c653;
+}
+
+/* Элемент точки */
+.slider .slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #f3c653;
+  border-color: transparent;
+  border-radius: 50%;
+  padding: 0;
+}
+
+/* Стрелка не активная */
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+.slider {
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0 30px;
+  z-index: 1;
+}
+
+.slider__item {
+  text-align: center;
+  opacity: 0.4;
+  -webkit-transition: all 0.3 ease 0s;
+  transition: all 0.3 ease 0s;
+}
+
+.slider__item.slick-center {
+  opacity: 1;
+}
+
+.slider-img {
+  display: block;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+}
+
+/* Стрелка влево */
+.slider .slick-arrow.slick-prev {
+  right: 0;
+  background-image: url("../images/cil_arrow-left.svg") 0 0/100% no-repeat;
+  z-index: 100;
+}
+
+/* Стрелка вправо */
+.slider .slick-arrow.slick-next {
+  left: 0;
+  background-image: url("../images/cil_arrow-right.svg") 0 0/100% no-repeat;
+}
+
+element.style {
+  width: 194px;
+}
+
 .section-title {
   font-family: "Poppins";
   font-style: normal;
@@ -187,7 +303,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.08;
   letter-spacing: 0.3em;
   color: #FFFFFF;
@@ -199,6 +315,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .nav__logo {
+    font-size: 36px;
     line-height: 1.08;
     color: #FFFDEE;
   }
@@ -216,8 +333,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 12px;
 }
 
 .nav__wrap {
@@ -234,7 +355,7 @@ body {
   display: flex;
 }
 
-.rest__link {
+.nav__link {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -243,7 +364,7 @@ body {
   letter-spacing: 0.02em;
   color: #F3C653;
 }
-.rest__link:hover, .rest__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: white;
 }
 
@@ -267,11 +388,15 @@ body {
   }
 }
 
-.icon__rest,
-.icon__hotel,
+.nav__icon-rest,
+.nav__icon-hotel,
 .address__icon {
   display: block;
   fill: currentColor;
+}
+
+.nav__icon-rest {
+  margin-right: 20px;
 }
 
 .nav__tel {
@@ -303,6 +428,12 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #F3C653;
+  max-width: 210px;
+  margin-right: 0;
 }
 
 .address__icon {
@@ -321,7 +452,7 @@ body {
   color: #E5E5E5;
 }
 
-.nav__wrap:hover .icon__hotel,
+.nav__wrap:hover .nav__icon-hotel,
 .nav__wrap:focus .nav__icon {
   color: white;
 }

@@ -16,7 +16,7 @@ $secondary-font: 'Roboto', sans-serif;
    font-family: $secondary-font;
    font-style: normal;
    font-weight: 700;
-   font-size: 36px;
+   font-size: 30px;
    line-height: 1.08;
 
    letter-spacing: 0.3em;
@@ -28,6 +28,7 @@ $secondary-font: 'Roboto', sans-serif;
       color: #FFFDEE;
    }
    @include tablet {
+   font-size: 36px;
    line-height: 1.08;
    color: #FFFDEE;
    }
@@ -39,7 +40,9 @@ $secondary-font: 'Roboto', sans-serif;
 .nav {
    display: flex;
    align-items: center;
+   justify-content: space-between;
    flex-wrap: wrap;
+   margin-bottom: 12px;
 }
 
 .nav__wrap {
@@ -51,7 +54,7 @@ $secondary-font: 'Roboto', sans-serif;
    display: flex;
 }
 
-.rest__link {
+.nav__link {
    font-family: 'Montserrat';
    font-style: normal;
    font-weight: 500;
@@ -88,11 +91,14 @@ $secondary-font: 'Roboto', sans-serif;
    }
 }
 
-.icon__rest,
-.icon__hotel,
+.nav__icon-rest,
+.nav__icon-hotel,
 .address__icon {
    display: block;
    fill: currentColor;
+}
+.nav__icon-rest {
+   margin-right: 20px;
 }
 
 .nav__tel {
@@ -116,6 +122,10 @@ $secondary-font: 'Roboto', sans-serif;
 .address {
    display: flex;
    justify-content: flex-end;
+   align-items: center;
+   border: 1px solid #F3C653;
+   max-width: 210px;
+   margin-right: 0;
 }
 
 .address__icon {
@@ -136,7 +146,7 @@ $secondary-font: 'Roboto', sans-serif;
 
 }
 
-.nav__wrap:hover .icon__hotel,
+.nav__wrap:hover .nav__icon-hotel,
 .nav__wrap:focus .nav__icon  {
    color: white;
 }

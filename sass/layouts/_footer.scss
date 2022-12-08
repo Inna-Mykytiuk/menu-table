@@ -121,7 +121,7 @@
    color: #F3C653;
    display: none;
    @include tablet {
-      // display: block;
+      display: block;
       margin-left: 0;
    }
 }
