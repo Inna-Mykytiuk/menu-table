@@ -337,6 +337,12 @@ element.style {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 1024px) {
+  .nav {
+    margin-bottom: 0;
+  }
 }
 
 .nav__wrap {
@@ -363,15 +369,31 @@ element.style {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  margin-right: 32px;
   color: #F3C653;
 }
 .nav__link:hover, .nav__link:focus {
   color: white;
 }
+@media screen and (min-width: 1024px) {
+  .nav__link {
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__link {
+    margin-right: 32px;
+  }
+}
 
-.nav__link.hotel {
-  margin-left: 70px;
+@media screen and (min-width: 1024px) {
+  .nav__link.hotel {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__link.hotel {
+    margin-left: 32px;
+  }
 }
 
 .nav__contacts {
@@ -405,8 +427,13 @@ element.style {
   fill: currentColor;
 }
 
-.nav__icon-rest {
-  margin-right: 20px;
+.nav__icon-rest,
+.nav__icon-hotel {
+  margin-right: 10px;
+}
+
+.nav__icon-hotel {
+  margin-right: 0;
 }
 
 .nav__tel {
@@ -436,6 +463,10 @@ element.style {
   }
 }
 
+.nav__tel.first {
+  margin-right: 16px;
+}
+
 .address {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,11 +480,17 @@ element.style {
   border: 1px solid #F3C653;
   max-width: 210px;
   margin-right: 0;
+  margin-left: auto;
+}
+@media screen and (min-width: 1024px) {
+  .address {
+    display: none;
+  }
 }
 
 .address__icon {
   margin-right: 8px;
-  color: currentColor;
+  color: #F3C653;
   width: 20px;
 }
 
@@ -468,11 +505,9 @@ element.style {
 }
 
 .nav-soc__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   gap: 20px;
-  margin-left: 70px;
+  margin-left: 32px;
 }
 @media screen and (min-width: 1024px) {
   .nav-soc__wrap {
@@ -488,8 +523,10 @@ element.style {
 }
 
 .nav-soc__link {
+  display: block;
+  width: 24px;
+  height: 24px;
   color: #F3C653;
-  padding: 20px 0;
 }
 .nav-soc__link:hover, .nav-soc__link:focus {
   background-color: transparent;
